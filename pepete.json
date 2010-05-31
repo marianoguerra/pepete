@@ -1,0 +1,319 @@
+{
+    "css": {
+        "src": ["example/ppt.css", "example/code.css"]
+    },
+
+    "templates": {
+        "xx-bigtext": {
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "20%",
+            "font-size": "96pt",
+            "text-align": "center"
+        },
+
+        "x-bigtext": {
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "22%",
+            "font-size": "80pt",
+            "text-align": "center"
+        },
+
+        "bigtext": {
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "24%",
+            "font-size": "64pt",
+            "text-align": "center"
+        },
+
+        "biglist": {
+            "margin-left": "10%",
+            "margin-top": "8%",
+            "font-size": "42pt",
+            "list-style-type": "none"
+        },
+
+        "smalllist": {
+            "margin-left": "12%",
+            "margin-top": "8%",
+            "font-size": "18pt",
+            "list-style-type": "none"
+        },
+
+        "bigimage": {
+            "margin-top": "8%"
+        },
+
+        "footer": {
+            "position": "fixed",
+            "bottom": "2em",
+            "right": "2em",
+            "font-size": "normal"
+        },
+
+        "quote": {
+            "margin-left": "10%",
+            "width": "80%",
+            "margin-top": "10%",
+            "font-size": "48pt",
+            "text-align": "justify",
+            "font-style": "italic"
+        },
+
+        "code": {
+            "margin-left": "20%",
+            "margin-top": "10%",
+            "font-size": "2em"
+        },
+
+        "lotofcode": {
+            "margin-left": "20%",
+            "margin-top": "2%",
+            "font-size": "1.5em"
+        }
+    },
+
+    "slides": {
+        "intro 1": {
+            "text": {
+                "data": "Press **f11** then press *n*",
+                "template": "x-bigtext"
+            }
+        },
+
+        "intro 2": {
+            "text": {
+                "data": "press *p*",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "first": {
+            "text": [
+                {
+                    "data": "pepete: JSON presentations for the interwebs",
+                    "template": "bigtext"
+                },
+
+                {
+                    "data": "Mariano Guerra",
+                    "template": "footer"
+                }
+            ]
+        },
+
+        "me": {
+            "text": {
+                "data": "Presentations **Sucks**",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "I <3": {
+            "text": {
+                "data": "I **&#x2665;** JS",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "why?": {
+            "text": {
+                "data": "Why?",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "quote": {
+            "text": [
+                {
+                    "data": "Because the world needs yet another presentation tool that sucks",
+                    "template": "quote"
+                },
+
+                {
+                    "data": "Mariano Guerra",
+                    "template": "footer"
+                }
+            ]
+        },
+
+        "dark side": {
+            "image": {
+                "src": "example/darkside.png",
+                "template": "bigimage"
+            }
+        },
+
+        "cookies": {
+            "image": {
+                "src": "example/cookieMonster.jpg",
+                "template": "bigimage"
+            }
+        },
+
+        "snippets": {
+            "text": {
+                "data": "Code!",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "efene if": {
+            "external": {
+                "src": "example/if.fn.html",
+                "template": "code"
+            }
+        },
+
+        "erlang if": {
+            "external": {
+                "src": "example/if.erl.html",
+                "template": "code"
+            }
+        },
+
+        "ifene if": {
+            "external": {
+                "src": "code/if.ifn.html",
+                "template": "code"
+            }
+        },
+
+        "lists": {
+            "text": {
+                "data": "Lists!",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "zen": {
+            "list": {
+                "data": [
+                    ">>> import this",
+                    "The Zen of Python, by Tim Peters",
+                    "&nbsp;",
+                    "**Beautiful is better than ugly.**",
+                    "Explicit is better than implicit.",
+                    "**Simple is better than complex.**",
+                    "Complex is better than complicated.",
+                    "**Flat is better than nested.**",
+                    "**Sparse is better than dense.**",
+                    "**Readability counts.**",
+                    "**Special cases aren't special enough to break the rules.**",
+                    "**Although practicality beats purity.**",
+                    "Errors should never pass silently.",
+                    "Unless explicitly silenced.",
+                    "In the face of ambiguity, refuse the temptation to guess.",
+                    "**There should be one-- and preferably only one --obvious way to do it.**",
+                    "Although that way may not be obvious at first unless you're Dutch.",
+                    "Now is better than never.",
+                    "Although never is often better than *right* now.",
+                    "**If the implementation is hard to explain, it's a bad idea.**",
+                    "**If the implementation is easy to explain, it may be a good idea.**",
+                    "Namespaces are one honking great idea -- let's do more of those!"],
+
+                "template": "smalllist"
+            }
+        },
+
+        "pros": {
+            "list": {
+                "data": [
+                    "Load presentations from any URL",
+                    "Automatically process/generate/transforms presentations",
+                    "Reuse styles",
+                    "Override templates when needed (see this slide's code)",
+                    "Show code like it should",
+                    "Use your text editor to create presentations",
+                    "We are talking about vim right?",
+                    "Extend it to fit your needs (like embedding a youtube video)",
+                    "Load resources from the interwebs"],
+                "template": "smalllist",
+                "style": {
+                    "margin-left": "20%"
+                }
+            }
+        },
+
+        "DRY": {
+            "text": {
+                "data": "DRY",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "DRY explain": {
+            "text": {
+                "data": "write the style once, use everywhere",
+                "template": "bigtext"
+            }
+        },
+
+        "DRY explain 1": {
+            "text": {
+                "data": "separate content from presentation",
+                "template": "bigtext"
+            }
+        },
+
+        "help!": {
+            "text": {
+                "data": "Help!",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "how to help": {
+            "list": {
+                "data": [
+                    "&#x2192; Download it",
+                    "&#x2192; Test it",
+                    "&#x2192; Report bugs",
+                    "&#x2192; Spread the word"],
+                "template": "biglist"
+            }
+        },
+
+        "resources": {
+            "list": {
+                "data": [
+                    "Github Projects",
+                    "&#x2192; http://github.com/marianoguerra",
+                    "This presentation",
+                    "&#x2192; http://github.com/marianoguerra/pepete/blob/master/pepete.json",
+                    "Pepete Repository",
+                    "&#x2192; http://github.com/marianoguerra/pepete"],
+                "template": "biglist"
+            }
+        },
+
+        "thanks": {
+            "text": {
+                "data": "Thanks",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "questions": {
+            "text": {
+                "data": "Questions?",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "outro": {
+            "text": {
+                "data": "Press *1*",
+                "template": "xx-bigtext"
+            }
+        }
+    },
+
+ "order": ["intro 1", "intro 2", "first", "why?", "me", "I <3",
+    "quote", "dark side", "cookies",
+    "snippets", "ifene if", "erlang if",
+    "lists", "zen", "pros", "DRY", "DRY explain", "DRY explain 1",
+    "help!", "how to help", "resources", "thanks", "questions", "outro"]
+}
