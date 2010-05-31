@@ -10,25 +10,28 @@
 	<style type="text/css">
 		body {
   		margin-top: 1.0em;
-  		background-color: #e8c0d6;
+  		background-color: #333;
 		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
+  		color: #ddd;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-		h1 { font-size: 3.8em; color: #173f29; margin-bottom: 3px; }
+		h1 { font-size: 3.8em; color: #eee; margin-bottom: 3px; }
 		h1 .small { font-size: 0.4em; }
 		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #173f29; }
-    h3 { text-align: center; color: #173f29; }
-    a { color: #173f29; }
+		h2 { font-size: 1.5em; color: #eee; }
+    h3 { text-align: center; color: #eee; }
+    a { color: #fff; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
+		pre { color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+   #load{
+    margin-left: 40%;
+   }
 	</style>
 	
 </head>
@@ -51,6 +54,11 @@
     <div class="description">
       a JSON presentation tool for the interweb
     </div>
+
+  <div id="load">
+   <input id="datapath" />
+   <button onclick="ppt.load($('#datapath').val().trim());">load</button>
+  </div>
 
     <h2>Dependencies</h2>
 <p>jquery.js, jquery.hotkeys.js</p>
@@ -81,6 +89,15 @@
 
   </div>
 
-  
+  <script type="text/javascript" src="jquery.js" charset="utf-8"></script>
+  <script type="text/javascript" src="jquery.hotkeys.js" charset="utf-8"></script>
+  <script type="text/javascript" src="ppt.js" charset="utf-8"></script>
+
+  <script type="text/javascript" charset="utf-8">
+   $(document).ready(function () {
+     var hash = document.location.hash.substring(1);
+     $("#datapath").val(hash || "pepete.json");
+   });
+  </script>
 </body>
 </html>
