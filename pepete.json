@@ -160,13 +160,6 @@
             }
         },
 
-        "efene if": {
-            "external": {
-                "src": "example/if.fn.html",
-                "template": "code"
-            }
-        },
-
         "erlang if": {
             "external": {
                 "src": "example/if.erl.html",
@@ -176,7 +169,7 @@
 
         "ifene if": {
             "external": {
-                "src": "code/if.ifn.html",
+                "src": "example/if.ifn.html",
                 "template": "code"
             }
         },
