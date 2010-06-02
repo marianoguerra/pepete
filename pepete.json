@@ -77,28 +77,38 @@
 
     "slides": {
         "intro 1": {
-            "text": {
+            "text": [
+            {
                 "data": "Press **f11** then press *n*",
                 "template": "x-bigtext"
-            }
+            },
+            {
+                "data": "f11 for full screen, n for next slide, keep pressing n if you got back here",
+                "template": "footer"
+            }]
         },
 
         "intro 2": {
-            "text": {
+            "text": [
+            {
                 "data": "press *p*",
                 "template": "xx-bigtext"
-            }
+            },
+            {
+                "data": "p for previous slide, keep pressing n if you got back here",
+                "template": "footer"
+            }]
         },
 
         "first": {
             "text": [
                 {
-                    "data": "pepete: JSON presentations for the interwebs",
+                    "data": "pepete: JSON presentations* for the interwebs",
                     "template": "bigtext"
                 },
 
                 {
-                    "data": "Mariano Guerra",
+                    "data": "Mariano Guerra - * some people call them ppts or powerpoints",
                     "template": "footer"
                 }
             ]
