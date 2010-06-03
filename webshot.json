@@ -1,0 +1,170 @@
+{
+    "css": {
+        "src": ["example/ppt.css", "example/code.css"]
+    },
+
+    "templates": {
+        "xx-bigtext": {
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "20%",
+            "font-size": "96pt",
+            "text-align": "center"
+        },
+
+        "x-bigtext": {
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "22%",
+            "font-size": "80pt",
+            "text-align": "center"
+        },
+
+        "bigtext": {
+            "margin-left": "auto",
+            "margin-right": "auto",
+            "margin-top": "24%",
+            "font-size": "64pt",
+            "text-align": "center"
+        },
+
+        "biglist": {
+            "margin-left": "10%",
+            "margin-top": "8%",
+            "font-size": "42pt",
+            "list-style-type": "none"
+        },
+
+        "smalllist": {
+            "margin-left": "12%",
+            "margin-top": "8%",
+            "font-size": "18pt",
+            "list-style-type": "none"
+        },
+
+        "bigimage": {
+            "margin-top": "8%"
+        },
+
+        "footer": {
+            "position": "fixed",
+            "bottom": "2em",
+            "right": "2em",
+            "font-size": "normal"
+        },
+
+        "quote": {
+            "margin-left": "10%",
+            "width": "80%",
+            "margin-top": "10%",
+            "font-size": "48pt",
+            "text-align": "justify",
+            "font-style": "italic"
+        },
+
+        "code": {
+            "margin-left": "20%",
+            "margin-top": "10%",
+            "font-size": "2em"
+        },
+
+        "lotofcode": {
+            "margin-left": "20%",
+            "margin-top": "2%",
+            "font-size": "1.5em"
+        }
+    },
+
+    "slides": {
+        "first": {
+            "text": [
+                {
+                    "data": "webshot: show and save websites to png and pdf*",
+                    "template": "bigtext"
+                },
+
+                {
+                    "data": "Mariano Guerra - press *n* for next slide, *p* for prevoius, *f11* to toggle fullscreen",
+                    "template": "footer"
+                }
+            ]
+        },
+
+        "to png": {
+            "text": [
+                {
+                    "data": "Save this to png with *ctrl+s* (if you are using webshot right now)",
+                    "template": "bigtext"
+                },
+
+                {
+                    "data": "press *n* for next slide, *p* for prevoius, *f11* to toggle fullscreen",
+                    "template": "footer"
+                }
+            ]
+        },
+
+        "to pdf": {
+            "text": [
+                {
+                    "data": "Save this to png with *ctrl+p* (same as before)",
+                    "template": "bigtext"
+                },
+
+                {
+                    "data": "press *n* for next slide, *p* for prevoius, *f11* to toggle fullscreen",
+                    "template": "footer"
+                }
+            ]
+        },
+
+        "that's all": {
+            "text": {
+                "data": "that's all",
+                "template": "xx-bigtext"
+            }
+        },
+
+        "cookies": {
+            "image": {
+                "src": "example/cookieMonster.jpg",
+                "template": "bigimage"
+            }
+        },
+
+        "how to help": {
+            "list": {
+                "data": [
+                    "&#x2192; Download it",
+                    "&#x2192; Test it",
+                    "&#x2192; Report bugs",
+                    "&#x2192; Spread the word"],
+                "template": "biglist"
+            }
+        },
+
+        "resources": {
+            "list": {
+                "data": [
+                    "Github Projects",
+                    "&#x2192; http://github.com/marianoguerra",
+                    "This presentation",
+                    "&#x2192; http://github.com/marianoguerra/pepete/blob/master/webshot.json",
+                    "Webshot Repository",
+                    "&#x2192; http://github.com/marianoguerra/webshot",
+                    "Pepete Repository",
+                    "&#x2192; http://github.com/marianoguerra/pepete"],
+                "template": "biglist"
+            }
+        },
+
+        "thanks": {
+            "text": {
+                "data": "Thanks",
+                "template": "xx-bigtext"
+            }
+        }
+    },
+
+ "order": ["first", "to png", "to pdf", "that's all", "cookies", "how to help", "resources", "thanks"]
+}
