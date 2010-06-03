@@ -118,6 +118,13 @@
             ]
         },
 
+        "where": {
+            "text": {
+                "data": "the screenshots are saved to the current directory with the current date as *&lt;date&gt;.pdf* or *&lt;date&gt;.png*",
+                "template": "bigtext"
+            }
+        },
+
         "that's all": {
             "text": {
                 "data": "that's all",
@@ -166,5 +173,5 @@
         }
     },
 
- "order": ["first", "to png", "to pdf", "that's all", "cookies", "how to help", "resources", "thanks"]
+ "order": ["first", "to png", "to pdf", "where", "that's all", "cookies", "how to help", "resources", "thanks"]
 }
