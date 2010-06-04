@@ -27,14 +27,17 @@ ppt.init = function(data) {
 };
 
 ppt.load = function (url) {
-    var callback = function (data) {
-        ppt.init(data);
-    };
-
     $.ajax({
       url: url,
       dataType: 'json',
-      success: callback,
+      success: function (data) {
+        if (data == null) {
+            alert("invalid data loading " + url);
+            return;
+        }
+
+        ppt.init(data);
+      },
       error: ppt.errorCb("error loading data")
     });
 };
