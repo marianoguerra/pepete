@@ -6,6 +6,7 @@ ppt.h = {};
 ppt.f = {};
 // data
 ppt.d = {};
+ppt.d.base = "";
 
 ppt.init = function(data) {
     var attr;
@@ -59,8 +60,12 @@ ppt.h.css = function (data, style) {
     ppt.f.handleValue(style.src, "addCssLink");
 };
 
+ppt.h.base = function (data, base) {
+    ppt.d.base = base;
+};
+
 ppt.f.addCssLink = function (style) {
-    $("head").append('<link rel="stylesheet" href="' + style + '" type="text/css" media="screen" charset="utf-8"/>');
+    $("head").append('<link rel="stylesheet" href="' + ppt.d.base + style + '" type="text/css" media="screen" charset="utf-8"/>');
 };
 
 ppt.h.order = function (data, order) {
@@ -205,7 +210,7 @@ ppt.f.markup = function (markup) {
 ppt.f.showImage = function (value) {
     var body = $("body"), node = $("<img>"), center;
 
-    node.attr("src", value.src);
+    node.attr("src", ppt.d.base + value.src);
 
     ppt.f.applyAll(node, value);
 
