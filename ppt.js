@@ -27,9 +27,15 @@ ppt.init = function(data) {
 };
 
 ppt.load = function (url) {
+    var type = "json";
+
+    if (url.substr(0, 7) == "http://" || url.substr(0, 8) == "https://") {
+        type = "jsonp";
+    }
+
     $.ajax({
       url: url,
-      dataType: 'json',
+      dataType: type,
       success: function (data) {
         if (data == null) {
             alert("invalid data loading " + url);
